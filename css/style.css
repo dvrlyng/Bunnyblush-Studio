@@ -178,6 +178,10 @@ main {
     margin-top: 0 auto;
 }
 
+/*shop*/
+
+/*kontakt*/
+
 /*footer*/
 footer {
     display: flex;
@@ -185,12 +189,14 @@ footer {
     align-items: center;
     text-align: center;
     background-color: #F7F4EF;
+    margin-top: 1.5rem;
 }
 
 footer img {
     display: block;
-    width:5rem;
+    width:8rem;
     height: auto;
+    margin-top: 0;
     padding: 2rem;
     padding-bottom: 0;
 }
@@ -199,4 +205,36 @@ footer img {
     margin: 0;
     padding-bottom: 1rem;
     font-size: 1.3rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #2B1B21;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #D887A6;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #D887A6;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
 }
