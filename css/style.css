@@ -56,8 +56,15 @@ main {
 }
 
 .menu a {
+    display: block;
+    padding: 10px 20px;
     text-decoration: none;
     color: #2B1B21;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    background-color: #D887A6;
 }
 
 .menu ul {
