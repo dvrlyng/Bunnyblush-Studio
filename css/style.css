@@ -7,15 +7,39 @@ body {
     background-color: #F3DBE4;
 }
 
+/*main*/
+main {
+    background-color: #F7F4EF;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+}
+
 /*header*/
+#mainheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#mainheader img {
+    width: 150px;
+    height: auto;
+}
+
+#mainheader p {
+    font-size: 28px;
+    margin: 5px 0 15px;
+}
 
 /*nav*/
 
-/*main*/
+
 
 /*utbud*/
 
 /*about*/
 
 /*footer*/
-
