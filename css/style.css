@@ -257,6 +257,11 @@ main {
     background-color: #D887A6;
 }
 
+/*felmeddelanden*/
+#error-list {
+    color: #D887A6;
+}
+
 /*footer*/
 footer {
     display: flex;
