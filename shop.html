@@ -34,48 +34,59 @@
     <main>
         <!--utbud sida-->
         <section class="container">
-            <h1>Utbud ✨</h1>
+            <h1>Utbud</h1>
         </section>
 
         <!--stickers-->
         <section class="container" id="stickers">
             <h2>Stickers</h2>
 
-            <article>
-                <img src="images/bubblegum.PNG" alt="rosa kanin" width="200">
-                <h3>bubblegum</h3>
-                <p>30kr</p>
-            </article>
+            <div class="sticker-slider">
+                <!--knapp som visar föregåenden sticker-->
+                <button type="button" id="prev-sticker"></button>
 
-            <article>
-                <img src="images/fizzy.PNG" alt="rosa och blå kanin" width="200">
-                <h3>fizzy</h3>
-                <p>30kr</p>
-            </article>
+                <!--alla stickers-->
+                <article class="sticker-card">
+                    <img src="images/bubblegum.PNG" alt="rosa kanin" width="200">
+                    <h3>bubblegum</h3>
+                    <p>30kr</p>
+                </article>
 
-            <article>
-                <img src="images/ivy.PNG" alt="grön kanin" width="200">
-                <h3>ivy</h3>
-                <p>30kr</p>
-            </article>
+                <article class="sticker-card">
+                    <img src="images/fizzy.PNG" alt="rosa och blå kanin" width="200">
+                    <h3>fizzy</h3>
+                    <p>30kr</p>
+                </article>
 
-            <article>
-                <img src="images/plum.PNG" alt="lilarosa kanin" width="200">
-                <h3>plum</h3>
-                <p>30kr</p>
-            </article>
+                <article class="sticker-card">
+                    <img src="images/ivy.PNG" alt="grön kanin" width="200">
+                    <h3>ivy</h3>
+                    <p>30kr</p>
+                </article>
 
-            <article>
-                <img src="images/matcha.png" alt="grönrosa kanin" width="200">
-                <h3>matcha</h3>
-                <p>30kr</p>
-            </article>
+                <article class="sticker-card">
+                    <img src="images/plum.PNG" alt="lilarosa kanin" width="200">
+                    <h3>plum</h3>
+                    <p>30kr</p>
+                </article>
 
-            <article>
+                <article class="sticker-card">
+                    <img src="images/matcha.png" alt="grönrosa kanin" width="200">
+                    <h3>matcha</h3>
+                    <p>30kr</p>
+                </article>
+
+            </div>
+
+            <article class="sticker-card">
                 <img src="images/klover.PNG" alt="grönblå kanin" width="200">
                 <h3>klöver</h3>
                 <p>30kr</p>
             </article>
+            </div>
+
+            <!--knapp för nästa sticker-->
+            <button type="button" id="next-sticker"></button>
         </section>
 
         <!--stickersheets-->
