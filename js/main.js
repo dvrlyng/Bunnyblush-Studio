@@ -26,11 +26,10 @@ if (contactForm) {
     contactForm.addEventListener("submit", function (event) { //lyssnar på submit
         event.preventDefault(); //sidan laddas inte om
 
-    if (validateForm()) {
-        const status = document.createElement("p"); //ny elemnt
-        status.textContent = "Formuläret är korret ifyllt!♡"
-        contactForm.appendChild(status); //meddelandet visas på sidan
-    }
+        //tömmer formuläret om det är korrekt ifyllt
+        if (validateForm()) {
+            contactForm.reset();
+        }
     });
 }
 
@@ -46,5 +45,29 @@ function validateForm() {
     if (messageInput.value.trim() === "") {
         errors.push("Du måste skriva ett meddelande.")
     }
+    //visa eventuella felmeddelanden
+    displayErrors();
+
+    //returnerar true eller false
+    return errors.length === 0;
 }
 
+//Visar felmeddelanden på sidan
+function displayErrors() {
+    //tar bort tidigare felmeddelanden
+    let errorList = document.querySelector("#error-list");
+
+    if (!errorList) { //kontrollerar om listan finns
+        errorList = document.createElement("ul"); //skapar punktlista
+        errorList.id = "error-list"; //ge listan ett id
+        contactForm.prepend(errorList); //felmeddelanden kommer övanför formuläret
+    }
+    errorList.innerHTML = ""; //tömmer tidigare felmeddelanden
+
+    //går igenom arrayen
+    errors.forEach(function (error) {
+        const liElement = document.createElement("li"); //skapa lielement
+        liElement.textContent = error;
+        errorList.appendChild(liElement); //lägger till felmeddelanden i listan
+    });
+}
