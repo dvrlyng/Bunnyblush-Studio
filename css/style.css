@@ -204,12 +204,51 @@ main {
 }
 
 /*sticker kort*/
+#stickers {
+    text-align: center;
+}
+
 .sticker-card,
 .product-card {
     background-color: #F7F4EF;
     border-radius: 0.5rem;
     padding: 0.5rem;
     min-width: 0;
+}
+
+.sticker-card img,
+.product-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0.5rem;
+}
+
+/*stickersheets*/
+#stickersheets {
+    text-align: center;
+}
+
+.product-card {
+    max-width: 20rem;
+    margin: auto;
+}
+
+/*commissions*/
+#commissions {
+    text-align: center;
+}
+
+#commissions > img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#commissions p {
+    font-size: 1.3rem;
 }
 
 /*kontakt*/
