@@ -179,7 +179,38 @@ main {
 }
 
 /*shop*/
+.container-intro h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
 
+.sticker-card p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.product-card p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+/*sticker grid*/
+.sticker-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap: 1rem
+}
+
+/*sticker kort*/
+.sticker-card,
+.product-card {
+    background-color: #F7F4EF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    min-width: 0;
+}
 
 /*kontakt*/
 .contact-info, 
