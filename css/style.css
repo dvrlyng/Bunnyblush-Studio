@@ -455,7 +455,6 @@ footer p {
 
 /*välkommen text*/
 .hero p {
-    text-align: center;
     margin: 0 10rem 0 5rem;
     padding: 0 10rem 0 10rem;
 }
@@ -477,9 +476,16 @@ footer p {
 }
 
 .about {
-    text-align: center;
     margin: 0 5rem 0 5rem;
     padding: 0 10rem 3rem 10rem;
+}
+
+/*shop*/
+
+/*kontakt*/
+.contact-info p {
+    margin: 0 10rem 0 10rem;
+    padding: 0 10rem 1rem 10rem;
 }
 
 /*footer*/
