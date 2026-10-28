@@ -426,6 +426,7 @@ footer p {
 /*desktop*/
 @media (min-width: 768px) {
 
+/*hamburgermenu*/
 .menu-toggle {
     display: none;
 }
@@ -437,11 +438,30 @@ footer p {
     flex-wrap: nowrap;
 }
 
+/*nav*/
 .menu {
     grid-column: 1;
     grid-row: 1;
     width: auto;
     padding-top: 0;
 }
+
+.menu ul,
+.menu.open ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+/*välkommen text*/
+.hero p {
+    text-align: center;
+    margin: 0 10rem 0 10rem;
+    padding: 0 10rem 0 10rem;
+}
+
+/*utbud*/
+
+/*footer*/
 
 }
