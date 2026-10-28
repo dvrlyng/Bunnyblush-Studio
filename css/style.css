@@ -426,105 +426,146 @@ footer p {
 /*desktop*/
 @media (min-width: 768px) {
 
-/*hamburgermenu*/
-.menu-toggle {
-    display: none;
-}
+    /*hamburgermenu*/
+    .menu-toggle {
+        display: none;
+    }
 
-#mainheader {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    flex-wrap: nowrap;
-}
+    #mainheader {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
-/*nav*/
-.menu {
-    grid-column: 1;
-    grid-row: 1;
-    width: auto;
-    padding-top: 0;
-}
+    main {
+        padding-bottom: 1.5rem;
+    }
 
-.menu ul,
-.menu.open ul {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
+    /*nav*/
+    .menu {
+        grid-column: 1;
+        grid-row: 1;
+        width: auto;
+        padding-top: 0;
+    }
 
-/*välkommen text*/
-.hero p {
-    margin: 0 10rem 0 5rem;
-    padding: 0 10rem 0 10rem;
-}
+    .menu ul,
+    .menu.open ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
 
-/*utbud*/
-.utbud {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    align-items: start;
-}
+    /*välkommen text*/
+    .hero p {
+        margin: 0 10rem 0 5rem;
+        padding: 0 10rem 0 10rem;
+    }
 
-.utbud h2 {
-    grid-column: 1 / 4;
-}
+    /*utbud*/
+    .utbud {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        align-items: start;
+    }
 
-.utbud .container {
-    margin-bottom: 0;
-}
+    .utbud h2 {
+        grid-column: 1 / 4;
+    }
 
-.about {
-    margin: 0 5rem 0 5rem;
-    padding: 0 10rem 3rem 10rem;
-}
+    .utbud .container {
+        margin-bottom: 0;
+    }
 
-/*shop*/
-.sticker-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
+    .about {
+        margin: 0 5rem 0 5rem;
+        padding: 0 10rem 3rem 10rem;
+    }
 
-.sticker-card,
-.product-card {
-    padding: 1rem;
-}
+    /*shop*/
+    .sticker-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
 
-/*kontakt*/
-.contact-info p {
-    margin: 0 10rem 0 10rem;
-    padding: 0 10rem 1rem 10rem;
-}
+    .sticker-card,
+    .product-card {
+        padding: 1rem;
+    }
 
-/*footer*/
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-}
+    /*stickersheets och commissions*/
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        align-items: stretch;
+    }
 
-footer .footerlogo {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: start;
-}
+    .shop-grid .container {
+        margin-bottom: 0;
+    }
 
-footer > p {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-    margin-top: 0;
+    /*anpassa bilderna*/
+    .shop-grid #stickersheets,
+    .shop-grid #commissions {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
 
-}
+    #stickersheets .product-card {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-.links {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-    margin-right: 1.5rem;
-}
+    #commissions>img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 
+    #commissions p {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /*kontakt*/
+    .contact-info p {
+        margin: 0 10rem 0 10rem;
+        padding: 0 10rem 1rem 10rem;
+    }
+
+    /*footer*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    footer .footerlogo {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+
+    footer>p {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+        margin-top: 0;
+
+    }
+
+    .links {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        margin-right: 1.5rem;
+    }
 }
