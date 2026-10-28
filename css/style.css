@@ -463,5 +463,33 @@ footer p {
 /*utbud*/
 
 /*footer*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+footer .footerlogo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+footer > p {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+.links {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    margin-right: 1.5rem;
+}
 
 }
