@@ -481,6 +481,15 @@ footer p {
 }
 
 /*shop*/
+.sticker-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.sticker-card,
+.product-card {
+    padding: 1rem;
+}
 
 /*kontakt*/
 .contact-info p {
