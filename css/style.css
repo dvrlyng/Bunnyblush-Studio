@@ -456,11 +456,31 @@ footer p {
 /*välkommen text*/
 .hero p {
     text-align: center;
-    margin: 0 10rem 0 10rem;
+    margin: 0 10rem 0 5rem;
     padding: 0 10rem 0 10rem;
 }
 
 /*utbud*/
+.utbud {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.utbud h2 {
+    grid-column: 1 / 4;
+}
+
+.utbud .container {
+    margin-bottom: 0;
+}
+
+.about {
+    text-align: center;
+    margin: 0 5rem 0 5rem;
+    padding: 0 10rem 3rem 10rem;
+}
 
 /*footer*/
 footer {
