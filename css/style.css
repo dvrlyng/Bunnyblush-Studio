@@ -223,6 +223,7 @@ main {
     width: 100%;
     height: auto;
     padding: 0;
+    box-sizing: border-box;
     background-color: transparent;
     border-radius: 0.5rem;
 }
@@ -459,8 +460,10 @@ footer p {
 
     /*välkommen text*/
     .hero p {
-        margin: 0 10rem 0 5rem;
-        padding: 0 10rem 0 10rem;
+        max-width: 45rem;
+        margin: auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
     }
 
     /*utbud*/
@@ -498,7 +501,7 @@ footer p {
     /*stickersheets och commissions*/
     .shop-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
         gap: 1rem;
         align-items: stretch;
     }
@@ -515,10 +518,22 @@ footer p {
         margin-bottom: 0;
     }
 
+    #stickersheets {
+        display: flex;
+        flex-direction: column;
+    }
+
     #stickersheets .product-card {
-        max-width: 100%;
         width: 100%;
+        max-width: none;
+        flex-grow: 1;
         box-sizing: border-box;
+    }
+
+    #stickersheets .product-card img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
     #commissions>img {
@@ -529,14 +544,17 @@ footer p {
     }
 
     #commissions p {
-        margin: 1rem;
-        padding: 1rem;
+        text-align: center;
+        max-width: 30rem;
+        margin: 1rem auto;
     }
 
     /*kontakt*/
     .contact-info p {
-        margin: 0 10rem 0 10rem;
-        padding: 0 10rem 1rem 10rem;
+        max-width: 40rem;
+        margin: 0 auto 1rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
     }
 
     /*footer*/
@@ -567,5 +585,11 @@ footer p {
         grid-row: 1;
         justify-self: end;
         margin-right: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
