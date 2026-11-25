@@ -43,7 +43,7 @@ function validateForm() {
         errors.push("Du måste ange ditt e-postadress.");
     }
     if (messageInput.value.trim() === "") {
-        errors.push("Du måste skriva ett meddelande.")
+        errors.push("Du måste skriva ett meddelande.");
     }
     //visa eventuella felmeddelanden
     displayErrors();
